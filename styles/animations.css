@@ -21,13 +21,13 @@
 }
 
 .like-icon .main-body {
-  fill: var(--page-background-color, #fff);
   transition: fill 0.3s linear;
+  fill: var(--page-background-color, #fff);
 }
 
 .like-icon .contour {
-  fill: var(--like-contour-color, #000);
   transition: fill 0.1s linear;
+  fill: var(--like-contour-color, #000);
 }
 
 .like-icon .heart {

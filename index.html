@@ -263,22 +263,22 @@
     </section>
 
     <div class="bottom-button-container">
-      <label for="modal-toggle" class="bottom-button">
+      <button type="button" onclick="document.getElementById('modal').showModal();" class="bottom-button">
         <img class="floppy" src="images/floppy.svg" alt=""> Сохранить на память
-      </label>
+      </button>
     </div>
 
-    <input type="checkbox" id="modal-toggle" class="modal-toggle" />
-
-    <div class="modal">
+    <dialog id="modal" class="modal">
       <div class="modal__content">
         <div class="text-in-modal">
           <img src="images/floppy-in-modal.svg" alt="">
-          <p class="p-in-modal">Вставьте дискету, чтобы продолжить</p>
+          <p class="p-in-modal">Вставьте дискету,чтобы продолжить</p>
         </div>
-        <label for="modal-toggle" class="modal__button">Ок</label>
+        <form method="dialog">
+          <button type="submit" class="modal__button">Ок</button>
+        </form>
       </div>
-    </div>
+    </dialog>
   </main>
   <script src="./scripts/like.js"></script>
 </body>
