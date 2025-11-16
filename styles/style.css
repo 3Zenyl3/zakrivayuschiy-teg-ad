@@ -121,12 +121,16 @@ main {
 }
 
 .like-icon {
-  display: block;
-  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card__like-button {
-  display: inline;
+  position: relative;
+  display: inline-block; 
+  overflow: hidden;
   font-family: var(--font-accent);
   font-weight: 400;
   font-style: Regular;
@@ -134,12 +138,41 @@ main {
   padding: 12.5px 37px;
   border: 2px solid black;
   cursor: pointer;
+  background: transparent;
+  z-index: 1;
+}
+
+.card__like-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.card__like-button:hover::before {
+  transform: scaleX(1);
+}
+
+.card__like-button:hover {
+  color: white;
 }
 
 .card-footer {
   display: flex;
   gap: 12px;
+  justify-content: flex-end;
   margin: 0 25px 25px 0;
+}
+
+.card__icon-button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
 }
 
 .card-section-two {
