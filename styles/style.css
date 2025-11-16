@@ -216,14 +216,12 @@ main {
 
 .bottom-button {
   display: inline;
-  align-items: center;
   font-family: var(--font-accent);
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
   padding: 18.5px 21px;
   cursor: pointer;
-  gap: 8px;
   border: 2px solid black;
 }
 
@@ -239,10 +237,6 @@ main {
   .floppy {
     margin-bottom: 8px;
   }
-}
-
-.modal-toggle {
-  display: none;
 }
 
 .modal {
@@ -286,7 +280,6 @@ main {
   text-transform: uppercase;
   padding: 12.5px clamp(114.5px, 1vh, 132.5px);
   border: 2px solid black;
-  margin-top: -30px;
 }
 
 .text-in-modal {
