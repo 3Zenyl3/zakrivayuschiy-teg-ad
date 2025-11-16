@@ -26,12 +26,12 @@
   background-color: rgba(231, 231, 231, 1);
   background-image:
     repeating-linear-gradient(
-      90deg, 
-      rgba(0,0,0,0.3) 0 2px, 
+      90deg,
+      rgba(0,0,0,0.3) 0 2px,
       rgba(255,255,255,0.9) 2px 4px
     ),
     repeating-linear-gradient(
-      rgba(0,0,0,0.3) 0 2px, 
+      rgba(0,0,0,0.3) 0 2px,
       rgba(255,255,255,0.9) 2px 4px
     ),
     linear-gradient(
@@ -44,7 +44,6 @@
 
 .title {
   font-family: var(--font-accent);
-  font-family: Press Start 2P;
   font-weight: 400;
   font-style: Regular;
   font-size: clamp(49px, 5vw, 65px);
@@ -87,9 +86,9 @@ main {
 
 .card-section-one {
   position: absolute;
-  top: calc(100px + clamp(327px, 50vw, 364px) + 100px); 
+  top: calc(100px + clamp(327px, 50vw, 364px) + 100px);
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   width: clamp(375px, 90vw, 696px);
   background-color: white;
   border: 1px solid black;
@@ -101,7 +100,7 @@ main {
 
 .main-img {
   width: 100%;
-  height: clamp(375px, 90vw, 696px);        
+  height: clamp(375px, 90vw, 696px); 
   margin-bottom: 27px;
   object-fit: cover;
   object-position: right;
@@ -129,7 +128,7 @@ main {
 
 .card__like-button {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
   overflow: hidden;
   font-family: var(--font-accent);
   font-weight: 400;
@@ -211,12 +210,12 @@ main {
   font-style: Regular;
   font-size: 14px;
   padding: 18.5px 21px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .bottom-button-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 @media (max-width: 376px) {
