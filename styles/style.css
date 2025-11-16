@@ -198,6 +198,10 @@ main {
   filter: blur(15px);
 }
 
+.main-img-eighth {
+  filter: saturate(100%);
+}
+
 .img-container {
   overflow: hidden;
 }
@@ -218,6 +222,14 @@ main {
 .bottom-button-container {
   display: flex;
   justify-content: center;
+}
+
+@supports (-webkit-text-stroke: 1px black) or (text-stroke: 1px black) {
+  .stroke-text {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;         
+    color: white;                  
+  }
 }
 
 @media (max-width: 376px) {
@@ -271,7 +283,6 @@ main {
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
-  font-family: Press Start 2P;
   text-transform: uppercase;
   text-align: left;
 }
